@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="221.0" prefWidth="404.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.assistant.ui.addMember.AddMembersController">
+    <stylesheets>
+        <URL value="@add_members.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="245.0" prefWidth="404.0">
+         <children>
+            <JFXTextField fx:id="Name" promptText="Name">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="id" layoutX="20.0" layoutY="30.0" promptText="MemberID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="PhoneNum" layoutX="10.0" layoutY="55.0" promptText="Phone Number">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="Email" layoutX="10.0" layoutY="80.0" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="53.0" prefWidth="404.0">
+               <children>
+                  <JFXButton fx:id="saveButton" onAction="#addMember" prefHeight="53.0" prefWidth="250.0" stylesheets="@../addbook/addbook.css" text="Save" />
+                  <JFXButton fx:id="cancelButton" layoutX="10.0" layoutY="10.0" onAction="#cancel" prefHeight="53.0" prefWidth="250.0" stylesheets="@../addbook/addbook.css" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
